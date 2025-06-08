@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suite test">
+    <test name="run all">
+        <classes>
+            <class name="com.course.testng.groups.group1"/>
+            <class name="com.course.testng.groups.group2"/>
+            <class name="com.course.testng.groups.group3"/>
+        </classes>
+    </test>
+
+    <test name="only group1 and group2">
+        <groups>
+            <run>
+                <include name="InGroup" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.course.testng.groups.group1"/>
+            <class name="com.course.testng.groups.group2"/>
+            <class name="com.course.testng.groups.group3"/>
+        </classes>
+    </test>
+
+
+</suite>
